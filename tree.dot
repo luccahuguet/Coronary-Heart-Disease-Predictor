@@ -1,0 +1,29 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="age <= 31.5\nentropy = 0.916\nsamples = 323\nvalue = [216, 107]\nclass = No", fillcolor="#f2bf9b"] ;
+1 [label="tobacco <= 4.23\nentropy = 0.328\nsamples = 83\nvalue = [78, 5]\nclass = No", fillcolor="#e78946"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="typea <= 73.5\nentropy = 0.229\nsamples = 81\nvalue = [78, 3]\nclass = No", fillcolor="#e68641"] ;
+1 -> 2 ;
+3 [label="entropy = 0.169\nsamples = 80\nvalue = [78, 2]\nclass = No", fillcolor="#e6843e"] ;
+2 -> 3 ;
+4 [label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = Yes", fillcolor="#399de5"] ;
+2 -> 4 ;
+5 [label="entropy = 0.0\nsamples = 2\nvalue = [0, 2]\nclass = Yes", fillcolor="#399de5"] ;
+1 -> 5 ;
+6 [label="ldl <= 3.695\nentropy = 0.984\nsamples = 240\nvalue = [138, 102]\nclass = No", fillcolor="#f8decb"] ;
+0 -> 6 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+7 [label="adiposity <= 27.945\nentropy = 0.741\nsamples = 62\nvalue = [49, 13]\nclass = No", fillcolor="#eca26e"] ;
+6 -> 7 ;
+8 [label="entropy = 0.876\nsamples = 44\nvalue = [31, 13]\nclass = No", fillcolor="#f0b68c"] ;
+7 -> 8 ;
+9 [label="entropy = 0.0\nsamples = 18\nvalue = [18, 0]\nclass = No", fillcolor="#e58139"] ;
+7 -> 9 ;
+10 [label="age <= 48.5\nentropy = 1.0\nsamples = 178\nvalue = [89, 89]\nclass = No", fillcolor="#ffffff"] ;
+6 -> 10 ;
+11 [label="entropy = 0.936\nsamples = 71\nvalue = [46, 25]\nclass = No", fillcolor="#f3c5a5"] ;
+10 -> 11 ;
+12 [label="entropy = 0.972\nsamples = 107\nvalue = [43, 64]\nclass = Yes", fillcolor="#bedff6"] ;
+10 -> 12 ;
+}
